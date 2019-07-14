@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private CallbackManager callmanager;
     private FirebaseAuth mAuth;
     public static final String TAG="FACELOG";
+    //testing the app
 
 
     @Override
