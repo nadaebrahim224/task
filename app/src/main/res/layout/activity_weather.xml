@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".weather">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="date"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="date"
+        android:layout_below="@+id/date"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/temp_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="date"
+        android:layout_below="@+id/temp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="date"
+        android:layout_below="@+id/temp_status"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
