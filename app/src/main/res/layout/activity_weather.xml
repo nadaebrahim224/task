@@ -7,11 +7,11 @@
     tools:context=".weather">
 
     <TextView
-        android:id="@+id/date"
+        android:id="@+id/date_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="date"
+        android:text="Date"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"/>
     <TextView
@@ -19,8 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="date"
-        android:layout_below="@+id/date"
+        android:text="tempreture"
+        android:layout_below="@+id/date_details"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"/>
     <TextView
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="date"
+        android:text="tempreture status"
         android:layout_below="@+id/temp"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"/>
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="date"
+        android:text="City"
         android:layout_below="@+id/temp_status"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"/>

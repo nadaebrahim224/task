@@ -15,6 +15,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class weather extends AppCompatActivity {
@@ -29,20 +30,25 @@ public class weather extends AppCompatActivity {
         temp=findViewById(R.id.temp);
 //        temp_status=findViewById(R.id.temp_status);
         city=findViewById(R.id.city);
+        Bundle b =getIntent().getExtras();
+        int forcastdate=b.getInt("forcats_date");
 
-        findweather();
+        findweather(forcastdate);
     }
 
-    public void findweather()
+    public void findweather(final int f_date)
     {
-        String URL="https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=b6907d289e10d714a6e88b30761fae22";
+        String URL="https://samples.openweathermap.org/data/2.5/forecast/hourly?zip=94040&appid=b6907d289e10d714a6e88b30761fae22";
         JsonObjectRequest json=new JsonObjectRequest(Request.Method.GET, URL, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {
 
+
+//                     if(f_date==w_date)
                     JSONObject jason_obj=new response.getJSONObject("main");
                     JSONArray jason_arr=new response.getJSONArray("weather");
+                    ArrayList<event_data> forcast_list=new ArrayList<>();
                     JSONObject object=jason_arr.getJSONObject(0);
                     String tempreture=String.valueOf(jason_obj.getDouble("temp"));
                     String mycity=response.getString("name");

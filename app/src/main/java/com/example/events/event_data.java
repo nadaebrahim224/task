@@ -5,10 +5,10 @@ import java.util.Date;
 public class event_data
 {
     private String event_name;
-    private Date date;
+    private int date;
     private String weather;
 
-    public event_data(String event_name, Date date, String weather) {
+    public event_data(String event_name, int date, String weather) {
         this.event_name = event_name;
         this.date = date;
         this.weather = weather;
@@ -25,11 +25,11 @@ public class event_data
         this.event_name = event_name;
     }
 
-    public Date getDate() {
+    public int getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(int date) {
         this.date = date;
     }
 
